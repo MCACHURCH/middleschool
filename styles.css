@@ -1,0 +1,211 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif; /* Change the font to Open Sans */
+
+}
+
+/* Set up container for layout */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header styles */
+header {
+    background-color: #3B6668;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    margin-bottom: -40px; /* Remove the whitespace below the header */
+}
+
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    margin-top: 5px;
+    max-height: 40px;
+    vertical-align: middle;
+    margin-right: 20px; /* Add some spacing between logo and navigation */
+}
+
+nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Background image */
+.hero {
+    position: relative;
+    height: 500px; /* Adjust the height as needed */
+    background-image: url("https://live.staticflickr.com/65535/53696126654_85e586dfa9_k.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6A6D6C50; /* Adjust the color and opacity as needed */
+}
+
+/* Hero content */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content .container {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+
+/* Main content styles */
+main {
+    padding: 40px 0;
+}
+
+.hero {
+    background-color: #f1c40f;
+    color: #fff;
+    padding: 40px;
+}
+
+/* Picture gallery styles */
+.picture-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Spacing between pictures */
+    margin-top: -20px; /* Remove white space between sections */
+}
+
+.picture {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width of each picture */
+    max-width: calc(33.33% - 20px); /* Adjust the max-width of each picture */
+    margin-bottom: 20px;
+}
+
+.picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Belonging section styles */
+#belonging {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 40px 0; /* Add padding */
+}
+
+#belonging .container {
+    text-align: left;
+}
+
+/* Announcement section styles*/
+#announcements .container {
+    margin-bottom: 30px;
+} 
+/* Picture section styles */
+#picture {
+    width: 50%; /* Take up half of the screen width */
+    float: left; /* Float the picture to the left */
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding: 20px; /* Add some padding */
+}
+
+#picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Calendar section styles */
+#calendar {
+    width: 50%; /* Take up half of the screen width */
+    float: right; /* Float the calendar to the right */
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding: 20px; /* Add some padding */
+}
+
+.calendar-event {
+    margin-bottom: 20px;
+}
+
+.event-details {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden; /* Clear floats */
+}
+
+.event-date {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.event-time {
+    margin: 0;
+    font-size: 12px;
+    
+}
+.event-name {
+    margin: 0;
+    font-size: 16px;
+    
+}
+
+.event-description {
+    margin: 0;
+    font-size: 14px;
+}
+
+#fullscreen-video-link {
+    color: white; /* Set the font color to white */
+}
+
+/* Footer styles */
+footer {
+    background-color: #34495e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
